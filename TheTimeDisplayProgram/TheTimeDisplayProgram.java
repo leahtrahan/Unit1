@@ -1,10 +1,17 @@
 package TheTimeDisplayProgram;
 
+import java.util.Scanner;
+
 public class TheTimeDisplayProgram {
 
     public static void main( String[] args ) {
+        int startingseconds;
 
-        int startingseconds = 10000;
+        Scanner keyboard = new Scanner(System.in);
+
+        System.out.print("Starting Seconds :: ");
+        startingseconds = keyboard.nextInt();
+    
         System.out.print("Starting Seconds: ");
         System.out.println(startingseconds);
         System.out.print("Hours: ");
